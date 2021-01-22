@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_221" class="java.beans.XMLDecoder">
+ <object class="icefield.Controller" id="Controller0">
+  <void property="fields">
+   <void method="add">
+    <object class="field.Field" id="Field0">
+     <void property="maxWeight">
+      <int>2</int>
+     </void>
+     <void property="neighbors">
+      <void method="add">
+       <object class="field.Field" id="Field1">
+        <void property="maxWeight">
+         <int>10</int>
+        </void>
+        <void property="neighbors">
+         <void method="add">
+          <object idref="Field0"/>
+         </void>
+         <void method="add">
+          <object class="field.Field" id="Field2">
+           <void property="neighbors">
+            <void method="add">
+             <object idref="Field0"/>
+            </void>
+            <void method="add">
+             <object idref="Field1"/>
+            </void>
+            <void method="add">
+             <object class="field.Field" id="Field3">
+              <void property="maxWeight">
+               <int>10</int>
+              </void>
+              <void property="neighbors">
+               <void method="add">
+                <object idref="Field1"/>
+               </void>
+               <void method="add">
+                <object class="field.Field" id="Field4">
+                 <void property="neighbors">
+                  <void method="add">
+                   <object idref="Field1"/>
+                  </void>
+                  <void method="add">
+                   <object idref="Field3"/>
+                  </void>
+                  <void method="add">
+                   <object class="field.Field" id="Field5">
+                    <void property="maxWeight">
+                     <int>1</int>
+                    </void>
+                    <void property="neighbors">
+                     <void method="add">
+                      <object idref="Field4"/>
+                     </void>
+                     <void method="add">
+                      <object idref="Field3"/>
+                     </void>
+                     <void method="add">
+                      <object class="field.Field" id="Field6">
+                       <void property="neighbors">
+                        <void method="add">
+                         <object idref="Field5"/>
+                        </void>
+                        <void method="add">
+                         <object class="field.Field" id="Field7">
+                          <void property="maxWeight">
+                           <int>10</int>
+                          </void>
+                          <void property="neighbors">
+                           <void method="add">
+                            <object class="field.Field" id="Field8">
+                             <void property="maxWeight">
+                              <int>2</int>
+                             </void>
+                             <void property="neighbors">
+                              <void method="add">
+                               <object class="field.Field" id="Field9">
+                                <void property="neighbors">
+                                 <void method="add">
+                                  <object class="field.Field" id="Field10">
+                                   <void property="maxWeight">
+                                    <int>10</int>
+                                   </void>
+                                   <void property="neighbors">
+                                    <void method="add">
+                                     <object idref="Field0"/>
+                                    </void>
+                                    <void method="add">
+                                     <object idref="Field2"/>
+                                    </void>
+                                    <void method="add">
+                                     <object class="field.Field" id="Field11">
+                                      <void property="maxWeight">
+                                       <int>10</int>
+                                      </void>
+                                      <void property="neighbors">
+                                       <void method="add">
+                                        <object idref="Field2"/>
+                                       </void>
+                                       <void method="add">
+                                        <object idref="Field3"/>
+                                       </void>
+                                       <void method="add">
+                                        <object class="field.Field" id="Field12">
+                                         <void property="neighbors">
+                                          <void method="add">
+                                           <object idref="Field3"/>
+                                          </void>
+                                          <void method="add">
+                                           <object idref="Field5"/>
+                                          </void>
+                                          <void method="add">
+                                           <object idref="Field7"/>
+                                          </void>
+                                          <void method="add">
+                                           <object idref="Field8"/>
+                                          </void>
+                                          <void method="add">
+                                           <object idref="Field11"/>
+                                          </void>
+                                         </void>
+                                         <void property="snow">
+                                          <int>1</int>
+                                         </void>
+                                        </object>
+                                       </void>
+                                       <void method="add">
+                                        <object idref="Field8"/>
+                                       </void>
+                                       <void method="add">
+                                        <object idref="Field9"/>
+                                       </void>
+                                       <void method="add">
+                                        <object idref="Field10"/>
+                                       </void>
+                                      </void>
+                                      <void property="snow">
+                                       <int>1</int>
+                                      </void>
+                                     </object>
+                                    </void>
+                                    <void method="add">
+                                     <object idref="Field9"/>
+                                    </void>
+                                   </void>
+                                   <void property="snow">
+                                    <int>1</int>
+                                   </void>
+                                  </object>
+                                 </void>
+                                 <void method="add">
+                                  <object idref="Field11"/>
+                                 </void>
+                                 <void method="add">
+                                  <object idref="Field8"/>
+                                 </void>
+                                </void>
+                                <void property="snow">
+                                 <int>1</int>
+                                </void>
+                               </object>
+                              </void>
+                              <void method="add">
+                               <object idref="Field11"/>
+                              </void>
+                              <void method="add">
+                               <object idref="Field12"/>
+                              </void>
+                              <void method="add">
+                               <object idref="Field7"/>
+                              </void>
+                             </void>
+                            </object>
+                           </void>
+                           <void method="add">
+                            <object idref="Field12"/>
+                           </void>
+                           <void method="add">
+                            <object idref="Field5"/>
+                           </void>
+                           <void method="add">
+                            <object idref="Field6"/>
+                           </void>
+                          </void>
+                          <void property="snow">
+                           <int>3</int>
+                          </void>
+                         </object>
+                        </void>
+                       </void>
+                       <void property="snow">
+                        <int>1</int>
+                       </void>
+                      </object>
+                     </void>
+                     <void method="add">
+                      <object idref="Field12"/>
+                     </void>
+                     <void method="add">
+                      <object idref="Field7"/>
+                     </void>
+                    </void>
+                    <void property="snow">
+                     <int>2</int>
+                    </void>
+                   </object>
+                  </void>
+                 </void>
+                 <void property="snow">
+                  <int>1</int>
+                 </void>
+                </object>
+               </void>
+               <void method="add">
+                <object idref="Field2"/>
+               </void>
+               <void method="add">
+                <object idref="Field5"/>
+               </void>
+               <void method="add">
+                <object idref="Field11"/>
+               </void>
+               <void method="add">
+                <object idref="Field12"/>
+               </void>
+              </void>
+             </object>
+            </void>
+            <void method="add">
+             <object idref="Field11"/>
+            </void>
+            <void method="add">
+             <object idref="Field10"/>
+            </void>
+           </void>
+           <void property="snow">
+            <int>1</int>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object idref="Field3"/>
+         </void>
+         <void method="add">
+          <object idref="Field4"/>
+         </void>
+        </void>
+        <void property="snow">
+         <int>2</int>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object idref="Field2"/>
+      </void>
+      <void method="add">
+       <object idref="Field10"/>
+      </void>
+     </void>
+     <void property="snow">
+      <int>1</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object idref="Field1"/>
+   </void>
+   <void method="add">
+    <object idref="Field4"/>
+   </void>
+   <void method="add">
+    <object idref="Field2"/>
+   </void>
+   <void method="add">
+    <object idref="Field3"/>
+   </void>
+   <void method="add">
+    <object idref="Field5"/>
+   </void>
+   <void method="add">
+    <object idref="Field6"/>
+   </void>
+   <void method="add">
+    <object idref="Field10"/>
+   </void>
+   <void method="add">
+    <object idref="Field11"/>
+   </void>
+   <void method="add">
+    <object idref="Field12"/>
+   </void>
+   <void method="add">
+    <object idref="Field9"/>
+   </void>
+   <void method="add">
+    <object idref="Field8"/>
+   </void>
+   <void method="add">
+    <object idref="Field7"/>
+   </void>
+  </void>
+ </object>
+</java>

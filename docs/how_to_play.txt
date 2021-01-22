@@ -1,0 +1,97 @@
+A játék irányítása, egyes képernyőkön kiadható inputokra lebontva:
+
+
+Menü
+Bal klikkel tudjuk kiválasztani a megfelelő menüpontot.
+
+
+High Scores
+Escape billentyűvel tudunk visszamenni a menübe.
+
+
+Options
+Név beírása után ezt a "Submit" gombbal nyugtázzuk.
+A zenét ki- és bekapcsolni a hangszóró ikonra kattintással lehet.
+Escape billentyűvel tudunk visszalépni a menübe.
+
+
+Pályakiválasztás:
+Bal klikkel tudunk kiválasztani egy pályát.
+Az alsó pálya egy tesztpálya, melyre mi magunk rakhatunk le bármit tesztparancsokkal. Erről a tesztpálya és a tesztparancsok pontnál írok.
+
+
+Játék:
+Az aktuális karaktert zöld kontúr jelöli.
+Másik mezőre átlépni bal klikkel lehet a szomszédos mezőre.
+Az eszkimó barna, a kutató kék.
+Eszkimóval iglut építeni a saját mezőre kattintva jobb klikkel lehet. Ha ez nem sikerül, akkor nincs elég energiánk, vagy az adott mező nem stabil.
+Kutatóval szomszédos mező teherbírását a szomszédos mezőre jobb klikkel lehet megnézni.
+Ásó nélkül havat ásni a saját mezőre bal klikkel lehet.
+Eszközt felvenni az eszközre (azaz a saját mezőnkre) bal klikkel lehet. Csak akkor látszódik eszköz, ha a mezőn nincsen hó.
+Eszközt használni az eszközre eszköztárban bal klikkel lehet.
+Kör végét jelezni az "End turn" gombbal lehet.
+Menübe kilépni Escape billentyűvel lehet.
+Tesztparancsot beírni a T billentyű megnyomása után lehet. Erről bővebben a Tesztparancsok pont alatt.
+
+
+Tesztpálya (az alsó pálya a pályakiválasztásnál):
+Ez egy olyan pálya, amin nincsen semmi alapból, csak egyes mezőkön hó.
+Minden kiadható parancs a TESZTPARANCSOK pont alatt.
+Mivel játékos nélkül nem lehet játszani, ezért először le kell raknunk egy játékost, addig nem enged tovább.
+Ha lyukra raknánk, vagy olyan mezőre ami vele együtt túlterhelt lesz, nem tudjuk lerakni.
+Itemekből bármennyit le tudunk rakni.
+Iglut és sátrat is tudunk állítani.
+Jegesmedvéből csak egyet tudunk lerakni.
+Havat is tudunk lerakni az egyes mezőkre.
+Ha "start"-ot írunk, a játék elkezdődik.
+
+You Won:
+Escape billentyűvel tudunk a menübe visszalépni.
+
+You Lose:
+Escape billentyűvel tudunk a menübe visszalépni.
+
+TESZTPARANCSOK:
+FONTOS: a tesztparancsokat "test on" paranccsal tudjuk engedélyezni, ekkor tesztmódba lépünk.
+Tesztmódban nincs automatikus hóvihar, és nem mozog magától a jegesmedve.
+KIKAPCSOLNI a tesztmódot "test off" paranccsal lehet.
+
+set
+	igloo
+	tent
+		<mező szám>
+Sátrat vagy iglut állíthatunk a megjelölt mezőre.
+Példák: set igloo 6, set tent 12
+
+
+polarbear <mező szám>
+A mezőszám azt adja meg, hogy a mező hanyadik szomszédjára akarunk lépni, 1-el kezdve az indexelést.
+Példa: polarbear 2
+
+snowstorm <mező számok>
+A mezőszám a mező abszolút azonosítója, amire hóvihart akarunk tenni. Akárhányat megadhatunk space-vel elválasztva.
+Példa: 	snowstorm 11: A 11-es mezőre hóvihart generál.
+	snowstorm 2 6 8 11 13: A 2-es, 6-os, 8-as, 11-es és 13-as mezőkre hóvihart generál
+
+spawn
+	item
+		<item neve>
+			<mező szám>
+Példák: spawn item tent 4, spawn item divingsuit 11, spawn item food 3
+
+	eskimo
+		<mező szám>
+			[item] (csak 1 item lehet)
+Lerak egy eszkimót.
+Példák: spawn eskimo 6, spawn eskimo 10 rope
+
+	scientist
+		<mező szám>
+			[item]
+Lerak egy kutatót.
+Példák: spawn scientist 5, spawn scientist 12 food
+
+	polarbear
+		<mező szám>
+Lerak egy jegesmedvét.
+Példa: spawn polarbear 3

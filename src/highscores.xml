@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.6" class="java.beans.XMLDecoder">
+ <object class="java.util.Vector">
+  <void method="add">
+   <object class="menu.ScoreData">
+    <void property="name">
+     <string>Player</string>
+    </void>
+    <void property="score">
+     <int>6</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="menu.ScoreData">
+    <void property="name">
+     <string>Player</string>
+    </void>
+    <void property="score">
+     <int>20</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="menu.ScoreData">
+    <void property="name">
+     <string>Player </string>
+    </void>
+    <void property="score">
+     <int>50</int>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
