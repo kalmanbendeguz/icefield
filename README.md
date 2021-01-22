@@ -4,9 +4,13 @@ University group project: 2D Java game.
 ### Hungarian documentation in docs. See how_to_play.txt for playing instructions.
 ### Creators:
 Kálmán Bendegúz Bence
+
 Jakabos Csenge Apolka
+
 Puskás Levente
+
 Kuzsner Sára
+
 Filep Leonardó Márk
 
 ### Compile, run from command line
